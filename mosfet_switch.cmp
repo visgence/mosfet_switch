@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by Cvpcb (2014-08-02 BZR 5044)-product   date = 8/15/2014 9:53:05 PM
+
+BeginCmp
+TimeStamp = /53EED762;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EECD12;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = Connect:bornier4;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EED56C;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EECCD0;
+Reference = Q1;
+ValeurCmp = MOSFET_N;
+IdModule  = Transistors_TO-220:TO-220_FET-GDS_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EED2A7;
+Reference = R1;
+ValeurCmp = 10;
+IdModule  = Discret:R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EED486;
+Reference = R2;
+ValeurCmp = 100k;
+IdModule  = Discret:R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /53EED6C2;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Discret:R4;
+EndCmp
+
+EndListe
