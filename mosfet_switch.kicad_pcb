@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew "(2014-08-02 BZR 5044)-product")
+(kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
 
   (general
     (links 10)
     (no_connects 0)
-    (area 46.37228 41.80746 84.500001 106.000001)
+    (area 46.649999 46.649999 83.350001 103.350001)
     (thickness 1.6)
     (drawings 16)
     (tracks 37)
@@ -141,7 +141,7 @@
       (net 1 GND))
     (pad 4 thru_hole circle (at 7.62 0) (size 3.81 3.81) (drill 1.524) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(P1-Pad4)"))
-    (model Device/bornier_4.wrl
+    (model ${KIPRJMOD}/KiModels/OSTTCXX2162.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -184,10 +184,10 @@
       (net 4 "Net-(Q1-PadG)"))
     (pad S thru_hole oval (at 2.54 0 180) (size 2.49936 1.50114) (drill 1.00076) (layers *.Cu *.Mask F.SilkS)
       (net 1 GND))
-    (model Transistor_TO-220_Wings3d_RevB_03Sep2012/TO220-vert_RevB_Faktor03937_03Sep2012.wrl
+    (model ${KIPRJMOD}/KiModels/TO-220_FET-GDS_Vertical_MountedFromLS.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.3937000036239624 0.3937000036239624 0.3937000036239624))
-      (rotate (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -279,6 +279,11 @@
     (fp_line (start 0 0) (end 8.001 0) (layer F.SilkS) (width 0.15))
     (pad "" thru_hole circle (at -12.7 -0.7874 270) (size 3.302 3.302) (drill 2.667) (layers *.Cu *.Mask F.SilkS))
     (pad "" thru_hole circle (at 12.7 -0.7874 270) (size 3.302 3.302) (drill 2.667) (layers *.Cu *.Mask F.SilkS))
+    (model ${KIPRJMOD}/KiModels/TO220HeatSink.wrl
+      (at (xyz 0 0.03 1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module LEDs:LED-5MM (layer F.Cu) (tedit 53EED5B3) (tstamp 53EED71C)
@@ -305,10 +310,10 @@
       (net 5 "Net-(D1-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 0 90) (size 1.6764 1.6764) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 6 "Net-(D1-Pad2)"))
-    (model discret/leds/led5_vertical_verde.wrl
+    (model ${KIPRJMOD}/KiModels/LED-5MM.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -332,8 +337,8 @@
       (net 6 "Net-(D1-Pad2)"))
     (pad 2 thru_hole circle (at 2.54 0) (size 2.54 2.54) (drill 1.524) (layers *.Cu *.Mask F.SilkS)
       (net 2 VCC))
-    (model Device/bornier_2.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/KiModels/OSTTCO22162_2.wrl
+      (at (xyz 0 0 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -363,9 +368,9 @@
       (net 4 "Net-(Q1-PadG)"))
     (pad 2 thru_hole circle (at 5.08 0 90) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 7 "Net-(P1-Pad3)"))
-    (model discret/resistor.wrl
+    (model ${KIPRJMOD}/KiModels/Resistor_Horizontal_RM10mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.4000000059604645 0.4000000059604645 0.4000000059604645))
+      (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz 0 0 0))
     )
   )
@@ -394,9 +399,9 @@
       (net 1 GND))
     (pad 2 thru_hole circle (at 5.08 0 90) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 7 "Net-(P1-Pad3)"))
-    (model discret/resistor.wrl
+    (model ${KIPRJMOD}/KiModels/Resistor_Horizontal_RM10mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.4000000059604645 0.4000000059604645 0.4000000059604645))
+      (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz 0 0 0))
     )
   )
@@ -425,9 +430,9 @@
       (net 5 "Net-(D1-Pad1)"))
     (pad 2 thru_hole circle (at 5.08 0 270) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 2 VCC))
-    (model discret/resistor.wrl
+    (model ${KIPRJMOD}/KiModels/Resistor_Horizontal_RM10mm.wrl
       (at (xyz 0 0 0))
-      (scale (xyz 0.4000000059604645 0.4000000059604645 0.4000000059604645))
+      (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz 0 0 0))
     )
   )
